@@ -145,7 +145,7 @@
                         <h4>シェンゲン協定とETIAS</h4>
                         <ul>
                             <li><strong>90/180日ルール：</strong>あらゆる180日の期間内で最大90日間のビザなし滞在</li>
-                            <li><strong>ETIAS（2025年9月時点）：</strong>完全義務化は2026年以降予定</li>
+                            <li><strong>ETIAS（2025年7月時点）：</strong>2026年後半実装予定のため不要</li>
                             <li><strong>注意：</strong>出発前に必ずEU公式サイトで最新情報を確認</li>
                         </ul>
                         <div class="important-links">
@@ -255,7 +255,7 @@
                             </div>
                             <div class="spec">
                                 <h5>電圧</h5>
-                                <p>オーストリア：230V / チェコ：220V</p>
+                                <p>オーストリア・チェコ共に：230V</p>
                             </div>
                         </div>
                         <h5>必要なもの</h5>
@@ -333,124 +333,50 @@
                 <div class="attraction-category">
                     <h3><i class="fas fa-palace"></i> ハプスブルク家の遺産</h3>
                     
-                    <div class="attraction-card featured">
+                    <div class="attraction-card featured" data-attraction="schonbrunn">
                         <div class="card-header">
                             <h4>シェーンブルン宮殿</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">ハプスブルク家の夏の離宮。宮殿、庭園、動物園を含む一大複合施設。</p>
-                            
-                            <div class="visit-info">
-                                <h5>見学オプション</h5>
-                                <div class="tour-options">
-                                    <div class="tour-option">
-                                        <h6>インペリアルツアー</h6>
-                                        <p>22室見学・約60分</p>
-                                    </div>
-                                    <div class="tour-option">
-                                        <h6>グランドツアー</h6>
-                                        <p>40室見学・約90分</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pricing">
-                                <h5>料金情報</h5>
-                                <div class="price-table">
-                                    <div class="price-row">
-                                        <span>宮殿チケット</span>
-                                        <span>€34.00</span>
-                                    </div>
-                                    <div class="price-row recommended">
-                                        <span>シシィ・チケット</span>
-                                        <span>€44.00</span>
-                                        <small>最も柔軟性が高い</small>
-                                    </div>
-                                    <div class="price-row">
-                                        <span>グロリエッテ</span>
-                                        <span>€15.00</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pro-tips">
-                                <h5><i class="fas fa-lightbulb"></i> 専門家のヒント</h5>
-                                <ul>
-                                    <li>シシィ・チケットは1年間有効で時間指定不要</li>
-                                    <li>最低半日、理想的には丸一日を確保</li>
-                                    <li>庭園散策も必須（グロリエッテからの眺望）</li>
-                                </ul>
+                            <p class="description">ハプスブルク家の夏の離宮として建設された、オーストリア帝国の栄華を物語る壮麗な宮殿</p>
+                            <div class="attraction-placeholder" id="schonbrunn-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('schonbrunn')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="attraction-card">
+                    <div class="attraction-card featured" data-attraction="hofburg">
                         <div class="card-header">
                             <h4>ホーフブルク王宮</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">600年にわたって増改築された巨大複合建築群。「都市の中の都市」</p>
-                            
-                            <div class="facilities">
-                                <h5>主要施設</h5>
-                                <ul>
-                                    <li><strong>皇帝の部屋：</strong>フランツ・ヨーゼフとエリーザベトの居住空間</li>
-                                    <li><strong>シシィ博物館：</strong>皇妃エリーザベトの生涯</li>
-                                    <li><strong>王宮宝物館：</strong>神聖ローマ帝国の帝冠</li>
-                                    <li><strong>スペイン乗馬学校：</strong>白馬による古典馬術</li>
-                                    <li><strong>国立図書館：</strong>世界で最も美しい図書館</li>
-                                </ul>
-                            </div>
-
-                            <div class="strategy">
-                                <h5>攻略戦略</h5>
-                                <p>興味に応じて施設を選択。シシィ・チケットは皇室の私生活に焦点、王宮宝物館は帝国の威光がテーマ。</p>
+                            <p class="description">600年にわたって増改築された巨大複合建築群。歴代皇帝の居住地として「都市の中の都市」を形成</p>
+                            <div class="attraction-placeholder" id="hofburg-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('hofburg')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="attraction-card">
+                    <div class="attraction-card featured" data-attraction="belvedere">
                         <div class="card-header">
                             <h4>ベルヴェデーレ宮殿</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">プリンツ・オイゲン公の夏の離宮。クリムトの「接吻」を所蔵。</p>
-                            
-                            <div class="highlights">
-                                <h5>見どころ</h5>
-                                <ul>
-                                    <li><strong>上宮：</strong>クリムト世界最大コレクション（「接吻」）</li>
-                                    <li><strong>下宮：</strong>特別展・企画展</li>
-                                    <li><strong>庭園：</strong>バロック式幾何学庭園</li>
-                                </ul>
-                            </div>
-
-                            <div class="pricing">
-                                <div class="price-table">
-                                    <div class="price-row">
-                                        <span>上宮（オンライン）</span>
-                                        <span>€17.50</span>
-                                    </div>
-                                    <div class="price-row">
-                                        <span>上宮（現地）</span>
-                                        <span>€20.00</span>
-                                    </div>
-                                    <div class="price-row recommended">
-                                        <span>全施設共通券</span>
-                                        <span>€28.20</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pro-tips">
-                                <h5><i class="fas fa-lightbulb"></i> 専門家のヒント</h5>
-                                <ul>
-                                    <li>オンライン購入で€2.50節約＋行列回避</li>
-                                    <li>クリムト目的なら上宮は必須</li>
-                                </ul>
+                            <p class="description">プリンツ・オイゲン公の夏の離宮として建設されたバロック建築の傑作。クリムト「接吻」など世界最大級のウィーン分離派コレクションを所蔵</p>
+                            <div class="attraction-placeholder" id="belvedere-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('belvedere')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -459,28 +385,18 @@
                 <div class="attraction-category">
                     <h3><i class="fas fa-church"></i> 信仰と街の象徴</h3>
                     
-                    <div class="attraction-card">
+                    <div class="attraction-card featured" data-attraction="stephansdom">
                         <div class="card-header">
                             <h4>シュテファン大聖堂</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">ウィーンの地理的・精神的中心。色鮮やかなモザイク屋根が象徴的。</p>
-                            
-                            <div class="experiences">
-                                <h5>体験オプション</h5>
-                                <ul>
-                                    <li><strong>本堂見学：</strong>オーディオガイド付き</li>
-                                    <li><strong>南塔（343段）：</strong>体力必要、最高の眺望</li>
-                                    <li><strong>北塔（エレベーター）：</strong>プンメリンの鐘</li>
-                                    <li><strong>カタコンベ：</strong>ハプスブルク家の墓所</li>
-                                    <li><strong>コンサート：</strong>復活祭・アドヴェント時期</li>
-                                </ul>
-                            </div>
-
-                            <div class="warning">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <p><strong>重要：</strong>見学可能時間は限定的（平日9:00-11:30, 13:00-16:30）。開館時間と見学時間の違いに注意！</p>
+                            <p class="description">ウィーンの地理的・精神的中心を成すゴシック建築の傑作。20万枚のモザイク屋根と137mの南塔「シュテフィー」が街のシンボル</p>
+                            <div class="attraction-placeholder" id="stephansdom-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('stephansdom')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -489,92 +405,34 @@
                 <div class="attraction-category">
                     <h3><i class="fas fa-palette"></i> 芸術と文化の宝庫</h3>
                     
-                    <div class="attraction-card featured">
+                    <div class="attraction-card featured" data-attraction="kunsthistorisches">
                         <div class="card-header">
                             <h4>ウィーン美術史美術館</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">ハプスブルク家の膨大なコレクション。5000年の西洋美術史を網羅。</p>
-                            
-                            <div class="collections">
-                                <h5>主要コレクション</h5>
-                                <ul>
-                                    <li><strong>絵画ギャラリー：</strong>ブリューゲル世界最大、フェルメール「絵画芸術」</li>
-                                    <li><strong>クンストカンマー：</strong>チェッリーニ作黄金塩入れ「サリエラ」</li>
-                                    <li><strong>古代コレクション：</strong>エジプト・ギリシャ・ローマ</li>
-                                </ul>
-                            </div>
-
-                            <div class="pricing">
-                                <div class="price-table">
-                                    <div class="price-row">
-                                        <span>単館チケット</span>
-                                        <span>€21.00</span>
-                                    </div>
-                                    <div class="price-row recommended">
-                                        <span>コンビ（＋王宮宝物館）</span>
-                                        <span>€30.00</span>
-                                        <small>1年間有効</small>
-                                    </div>
-                                    <div class="price-row">
-                                        <span>年間パス（7施設）</span>
-                                        <span>€53.00</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pro-tips">
-                                <h5><i class="fas fa-lightbulb"></i> 専門家のヒント</h5>
-                                <ul>
-                                    <li>建物自体が19世紀歴史主義建築の傑作</li>
-                                    <li>中央ドーム下のカフェは「世界で最も美しいカフェ」</li>
-                                    <li>月曜休館（9-5月）</li>
-                                </ul>
+                            <p class="description">ハプスブルク家の膨大なコレクションを誇る世界屈指の美術館。5000年の西洋美術史を網羅する圧倒的な収蔵品</p>
+                            <div class="attraction-placeholder" id="kunsthistorisches-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('kunsthistorisches')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="attraction-card">
+                    <div class="attraction-card featured" data-attraction="albertina">
                         <div class="card-header">
                             <h4>アルベルティーナ美術館</h4>
-                            <span class="rating">⭐⭐⭐⭐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">ハプスブルク家の宮殿と世界トップクラスの近代美術コレクション。</p>
-                            
-                            <div class="collections">
-                                <h5>展示内容</h5>
-                                <ul>
-                                    <li><strong>常設「モネからピカソまで」：</strong>バートリナー・コレクション</li>
-                                    <li><strong>ハプスブルク家の部屋：</strong>21室の新古典主義宮殿</li>
-                                    <li><strong>グラフィック・アート：</strong>デューラー「野うさぎ」</li>
-                                </ul>
-                            </div>
-
-                            <div class="locations">
-                                <h5>アルベルティーナ系列</h5>
-                                <div class="location-table">
-                                    <div class="location-row">
-                                        <span>本館（Albertinaplatz）</span>
-                                        <span>€19.90</span>
-                                        <small>近代美術・宮殿</small>
-                                    </div>
-                                    <div class="location-row">
-                                        <span>モダン（Karlsplatz）</span>
-                                        <span>€15.90</span>
-                                        <small>現代美術</small>
-                                    </div>
-                                    <div class="location-row recommended">
-                                        <span>コンビチケット</span>
-                                        <span>€24.90</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="warning">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <p>複数施設展開に注意。事前に住所と展示内容を確認必須！</p>
+                            <p class="description">ハプスブルク家アルベルト公の宮殿を活用した世界屈指の美術館。100万点超の版画・素描と印象派の傑作群を収蔵</p>
+                            <div class="attraction-placeholder" id="albertina-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('albertina')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -583,83 +441,51 @@
                 <div class="attraction-category">
                     <h3><i class="fas fa-music"></i> クラシック音楽の首都</h3>
                     
-                    <div class="attraction-card featured">
+                    <div class="attraction-card featured" data-attraction="state-opera">
                         <div class="card-header">
                             <h4>ウィーン国立歌劇場</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">世界最高峰のオペラハウス。最高の舞台芸術を体験。</p>
-                            
-                            <div class="experience-options">
-                                <h5>体験方法</h5>
-                                <div class="option-grid">
-                                    <div class="option">
-                                        <h6>公演鑑賞（座席）</h6>
-                                        <p>€15-300+</p>
-                                        <p>数ヶ月前予約必須</p>
-                                    </div>
-                                    <div class="option recommended">
-                                        <h6>立ち見席</h6>
-                                        <p>€10-20</p>
-                                        <p>当日80分前販売</p>
-                                    </div>
-                                    <div class="option">
-                                        <h6>ガイドツアー</h6>
-                                        <p>要確認</p>
-                                        <p>舞台裏見学</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="standing-room-guide">
-                                <h5><i class="fas fa-star"></i> 立ち見席攻略法</h5>
-                                <ul>
-                                    <li>400席以上が手頃な価格で提供</li>
-                                    <li>開演80分前から専用窓口で販売</li>
-                                    <li>スカーフ等での場所取りが慣習</li>
-                                    <li>世界最高峰を格安で体験できる裏技</li>
-                                </ul>
+                            <p class="description">世界最高峰のオペラハウス。立ち見席からでも最高峰の舞台芸術を格安で体験できる音楽の聖地</p>
+                            <div class="attraction-placeholder" id="state-opera-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('state-opera')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="attraction-card">
+                    <div class="attraction-card featured" data-attraction="philharmonic">
                         <div class="card-header">
-                            <h4>ウィーン楽友協会</h4>
+                            <h4>ウィーン楽友協会（黄金ホール）</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">ウィーン・フィルの本拠地。比類なき音響効果の「黄金のホール」。</p>
-                            
-                            <div class="venue-info">
-                                <ul>
-                                    <li>ニューイヤーコンサート会場として世界的に有名</li>
-                                    <li>ガイドツアーで建築・歴史を学習可能</li>
-                                    <li>住所：Musikvereinsplatz 1, 1010 Vienna</li>
-                                    <li>公式サイト：www.musikverein.at</li>
-                                </ul>
+                            <p class="description">世界最高峰の音響効果を誇る「黄金のホール」。ウィーン・フィルハーモニー管弦楽団の本拠地として、毎年のニューイヤーコンサートで世界に中継される聖地</p>
+                            <div class="attraction-placeholder" id="philharmonic-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('philharmonic')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="attraction-card">
+                    <div class="attraction-card featured" data-attraction="mozart-house">
                         <div class="card-header">
                             <h4>モーツァルトハウス・ウィーン</h4>
-                            <span class="rating">⭐⭐⭐⭐</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
-                            <p class="description">モーツァルトがウィーンで暮らした唯一現存する住居。「フィガロの結婚」創作の地。</p>
-                            
-                            <div class="visit-details">
-                                <ul>
-                                    <li><strong>住所：</strong>Domgasse 5, 1010 Vienna</li>
-                                    <li><strong>開館：</strong>毎日 10:00-18:00</li>
-                                    <li><strong>料金：</strong>大人 €14</li>
-                                    <li><strong>コンビチケット：</strong>音楽の家など</li>
-                                </ul>
+                            <p class="description">モーツァルトがウィーンで暮らした唯一現存する住居。「フィガロの結婚」を作曲した音楽史上最重要な場所</p>
+                            <div class="attraction-placeholder" id="mozart-house-placeholder"></div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary" onclick="showAttractionModal('mozart-house')">
+                                    <i class="fas fa-info-circle"></i> 詳細情報を見る
+                                </button>
                             </div>
-                        </div>
                     </div>
                 </div>
 
@@ -1016,195 +842,41 @@
                 <h3><i class="fas fa-landmark"></i> プラハ歴史地区の核心</h3>
                 
                 <div class="attraction-category">
-                    <div class="attraction-card featured">
+                    <div class="attraction-card featured" data-attraction="prague-castle" onclick="showAttractionModal('prague-castle')">
                         <div class="card-header">
                             <h4>プラハ城コンプレックス</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
                             <p class="description">世界最大級の城郭。70,000㎡の「街の中の街」。2日間有効チケット。</p>
-                            
-                            <div class="castle-highlights">
-                                <h5>主要見どころ</h5>
-                                <div class="highlight-grid">
-                                    <div class="highlight">
-                                        <h6>聖ヴィート大聖堂</h6>
-                                        <p>930年創建、1929年完成</p>
-                                        <p>ミュシャのステンドグラス</p>
-                                        <p>南塔287段（展望台）</p>
-                                    </div>
-                                    <div class="highlight">
-                                        <h6>旧王宮</h6>
-                                        <p>ボヘミア王の居城</p>
-                                        <p>ヴラディスラフ・ホール</p>
-                                        <p>美しいリブ・ヴォールト天井</p>
-                                    </div>
-                                    <div class="highlight">
-                                        <h6>黄金の小路</h6>
-                                        <p>16世紀の衛兵住居</p>
-                                        <p>カフカ仕事場（22番地）</p>
-                                        <p>カラフルな小さな家々</p>
-                                    </div>
-                                    <div class="highlight">
-                                        <h6>衛兵交代式</h6>
-                                        <p>毎日正午、第一の中庭</p>
-                                        <p>音楽隊演奏付き</p>
-                                        <p>観光客に人気のイベント</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="visit-strategy">
-                                <h5><i class="fas fa-lightbulb"></i> 攻略戦略</h5>
-                                <ul>
-                                    <li>最低半日、理想的には丸一日確保</li>
-                                    <li>チケットは2日間有効なので無理せず計画的に</li>
-                                    <li>朝一の訪問で混雑回避</li>
-                                    <li>南塔は体力必要、晴天日推奨</li>
-                                </ul>
+                            <div class="action-buttons">
+                                <button class="btn-primary">詳細を見る</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="attraction-card featured">
+                    <div class="attraction-card featured" data-attraction="charles-bridge" onclick="showAttractionModal('charles-bridge')">
                         <div class="card-header">
                             <h4>カレル橋</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
                             <p class="description">14世紀建設、全長520m。時間帯で全く異なる表情を見せる「生きた舞台」。</p>
-                            
-                            <div class="bridge-features">
-                                <h5>橋の魅力</h5>
-                                <ul>
-                                    <li><strong>30体の聖人像：</strong>17-18世紀バロック彫刻</li>
-                                    <li><strong>聖ヤン・ネポムツキー像：</strong>台座タッチで幸運・再訪</li>
-                                    <li><strong>両端の橋塔：</strong>有料展望スポット</li>
-                                    <li><strong>大道芸人・音楽家：</strong>日中の賑わい</li>
-                                </ul>
-                            </div>
-
-                            <div class="time-recommendations">
-                                <h5>時間帯別体験</h5>
-                                <div class="time-grid">
-                                    <div class="time-slot">
-                                        <h6>夜明け前</h6>
-                                        <p>霧の中の幻想的シルエット</p>
-                                        <p>静寂の中で歴史の重み</p>
-                                    </div>
-                                    <div class="time-slot">
-                                        <h6>日中</h6>
-                                        <p>大道芸人と音楽家の競演</p>
-                                        <p>世界中の観光客で賑わい</p>
-                                    </div>
-                                    <div class="time-slot recommended">
-                                        <h6>日没後</h6>
-                                        <p>ライトアップされたプラハ城</p>
-                                        <p>最もロマンチックな時間</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bridge-towers">
-                                <h5>橋塔情報</h5>
-                                <div class="tower-grid">
-                                    <div class="tower">
-                                        <h6>旧市街橋塔</h6>
-                                        <p>料金：150 CZK</p>
-                                        <p>カレル橋全景＋プラハ城</p>
-                                        <p>象徴的ビューポイント</p>
-                                    </div>
-                                    <div class="tower">
-                                        <h6>マラー・ストラナ橋塔</h6>
-                                        <p>2つの塔で構成</p>
-                                        <p>旧市街を見渡す</p>
-                                        <p>異なる角度からの眺望</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pro-tips">
-                                <h5><i class="fas fa-lightbulb"></i> 専門家のヒント</h5>
-                                <ul>
-                                    <li>滞在中に最低2回、異なる時間帯に渡ること推奨</li>
-                                    <li>夕景・夜景撮影は旧市街橋塔がベスト</li>
-                                    <li>スリ注意、特に混雑時</li>
-                                </ul>
+                            <div class="action-buttons">
+                                <button class="btn-primary">詳細を見る</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="attraction-card featured">
+                    <div class="attraction-card featured" data-attraction="old-town-square" onclick="showAttractionModal('old-town-square')">
                         <div class="card-header">
                             <h4>旧市街広場と天文時計</h4>
                             <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
                         <div class="card-content">
                             <p class="description">プラハ観光の心臓部。ゴシック・バロック建築に囲まれた歴史的中心地。</p>
-                            
-                            <div class="square-highlights">
-                                <h5>広場の見どころ</h5>
-                                <ul>
-                                    <li><strong>ティーン教会：</strong>ゴシック様式の尖塔</li>
-                                    <li><strong>聖ミクラーシュ教会：</strong>バロック様式</li>
-                                    <li><strong>歴史的建物：</strong>多様な建築様式</li>
-                                    <li><strong>カフェテラス：</strong>人々の憩いの場</li>
-                                </ul>
-                            </div>
-
-                            <div class="astronomical-clock">
-                                <h5>天文時計（プラハのオルロイ）</h5>
-                                <div class="clock-info">
-                                    <div class="clock-detail">
-                                        <h6>歴史</h6>
-                                        <p>1410年制作</p>
-                                        <p>複雑な天文情報表示</p>
-                                        <p>中世の世界観を体現</p>
-                                    </div>
-                                    <div class="clock-detail">
-                                        <h6>からくりショー</h6>
-                                        <p>毎正時（9:00-21:00）</p>
-                                        <p>12使徒の人形が登場</p>
-                                        <p>数十秒の短いパフォーマンス</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tower-strategy">
-                                <h5><i class="fas fa-strategy"></i> 旧市庁舎塔 戦略的攻略法</h5>
-                                <div class="strategy-steps">
-                                    <div class="step">
-                                        <span class="step-number">1</span>
-                                        <p>からくりショーを観覧</p>
-                                    </div>
-                                    <div class="step">
-                                        <span class="step-number">2</span>
-                                        <p>ショー終了で群衆が散る</p>
-                                    </div>
-                                    <div class="step">
-                                        <span class="step-number">3</span>
-                                        <p>すぐに塔に登る（待ち時間短縮）</p>
-                                    </div>
-                                    <div class="step">
-                                        <span class="step-number">4</span>
-                                        <p>360度パノラマを独占的に楽しむ</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="tower-info">
-                                    <h6>塔の詳細</h6>
-                                    <ul>
-                                        <li>料金：250 CZK</li>
-                                        <li>営業：9:00-22:00（火-日）、11:00-22:00（月）</li>
-                                        <li>エレベーター完備</li>
-                                        <li>旧市街広場、ティーン教会、プラハ城の眺望</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="warning">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <p><strong>スリ注意：</strong>からくりショー時は混雑でスリ多発。貴重品管理を徹底！</p>
+                            <div class="action-buttons">
+                                <button class="btn-primary">詳細を見る</button>
                             </div>
                         </div>
                     </div>
@@ -1271,42 +943,117 @@
                         <h4><i class="fas fa-university"></i> 多様な博物館・美術館</h4>
                         
                         <div class="museum-grid">
-                            <div class="museum-card">
+                            <div class="museum-card featured">
                                 <div class="card-header">
                                     <h5>国立博物館</h5>
+                                    <span class="rating">⭐⭐⭐⭐</span>
                                 </div>
                                 <div class="card-content">
-                                    <p><strong>場所：</strong>ヴァーツラフ広場最上部</p>
-                                    <p><strong>建築：</strong>ネオルネサンス様式の壮大な建物</p>
-                                    <p><strong>展示：</strong>チェコ歴史、自然科学、鉱物、音楽</p>
-                                    <p><strong>見どころ：</strong>貴族の鉱物コレクション</p>
+                                    <p class="description">チェコの歴史と自然史の宝庫。1818年創設、ネオルネサンス様式の威厳ある建物。</p>
+                                    
+                                    <div class="museum-highlights">
+                                        <h6>主要コレクション</h6>
+                                        <ul>
+                                            <li><strong>自然史：</strong>世界最大級の鉱物・宝石コレクション</li>
+                                            <li><strong>考古学：</strong>スラブ民族の歴史的遺物</li>
+                                            <li><strong>図書館：</strong>160万冊の貴重書</li>
+                                            <li><strong>パンテオン：</strong>チェコの偉人たちの記念空間</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="visit-info">
+                                        <h6>訪問情報</h6>
+                                        <ul>
+                                            <li><strong>場所：</strong>ヴァーツラフ広場最上部</li>
+                                            <li><strong>営業：</strong>10:00-18:00（月曜休館）</li>
+                                            <li><strong>料金：</strong>大人 280 CZK</li>
+                                            <li><strong>所要時間：</strong>2-3時間</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="pro-tips">
+                                        <h6><i class="fas fa-lightbulb"></i> 攻略のヒント</h6>
+                                        <ul>
+                                            <li>建物自体の美しさも見どころ</li>
+                                            <li>鉱物コレクションは世界トップクラス</li>
+                                            <li>ヴァーツラフ広場散策と合わせて効率的</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="museum-card">
+                            <div class="museum-card featured">
                                 <div class="card-header">
                                     <h5>国立美術館</h5>
+                                    <span class="rating">⭐⭐⭐⭐</span>
                                 </div>
                                 <div class="card-content">
-                                    <p>市内分散の歴史的建物を活用した洗練されたキュレーション</p>
-                                    <ul>
-                                        <li><strong>キンスキー宮殿：</strong>アジア美術</li>
-                                        <li><strong>ヴェレトゥルジュニー宮殿：</strong>近代・現代美術</li>
-                                        <li><strong>聖アグネス修道院：</strong>中世美術</li>
-                                    </ul>
+                                    <p class="description">市内分散の歴史的建物を活用した洗練されたキュレーション。各施設が専門分野に特化。</p>
+                                    
+                                    <div class="gallery-locations">
+                                        <h6>主要施設</h6>
+                                        <div class="location-grid">
+                                            <div class="location">
+                                                <h7>キンスキー宮殿</h7>
+                                                <p>18世紀ロココ様式宮殿</p>
+                                                <p>アジア美術・古典彫刻</p>
+                                                <p>旧市街広場に面した立地</p>
+                                            </div>
+                                            <div class="location">
+                                                <h7>ヴェレトゥルジュニー宮殿</h7>
+                                                <p>19-20世紀美術の宝庫</p>
+                                                <p>チェコ国民画派の傑作</p>
+                                                <p>現代アートまで幅広く収蔵</p>
+                                            </div>
+                                            <div class="location">
+                                                <h7>聖アグネス修道院</h7>
+                                                <p>ゴシック建築の修道院</p>
+                                                <p>中世ボヘミア絵画・彫刻</p>
+                                                <p>宗教美術の最高峰</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="strategy">
+                                        <h6><i class="fas fa-lightbulb"></i> 鑑賞戦略</h6>
+                                        <ul>
+                                            <li>3施設通し券がお得</li>
+                                            <li>各施設2-3時間の時間確保を</li>
+                                            <li>ヴェレトゥルジュニー宮殿は必見</li>
+                                            <li>キンスキー宮殿は旧市街観光と合わせて</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="museum-card unique">
                                 <div class="card-header">
                                     <h5>ユニークな博物館</h5>
+                                    <span class="rating">⭐⭐⭐</span>
                                 </div>
                                 <div class="card-content">
-                                    <ul>
-                                        <li><strong>共産主義博物館：</strong>チェコスロバキア社会主義時代</li>
-                                        <li><strong>ビール博物館：</strong>4種類テイスティング付き</li>
-                                        <li><strong>DOX現代アートセンター：</strong>挑発的な現代アート</li>
-                                    </ul>
+                                    <p class="description">プラハでしか体験できない特色ある博物館群。</p>
+                                    
+                                    <div class="unique-museums">
+                                        <div class="unique-item">
+                                            <h6>共産主義博物館</h6>
+                                            <p>1948-1989年のチェコスロバキア社会主義時代を展示</p>
+                                            <p>プロパガンダポスター、日用品、秘密警察の資料</p>
+                                            <p><strong>場所：</strong>ナ・プリコピエ10番地</p>
+                                        </div>
+                                        <div class="unique-item">
+                                            <h6>ビール博物館</h6>
+                                            <p>チェコビール文化の殿堂</p>
+                                            <p>4種類のテイスティング付き入場券</p>
+                                            <p><strong>体験：</strong>ビール醸造歴史と試飲</p>
+                                        </div>
+                                        <div class="unique-item">
+                                            <h6>DOX現代アートセンター</h6>
+                                            <p>プラハ7区の挑発的現代アート空間</p>
+                                            <p>国際的アーティストの企画展</p>
+                                            <p><strong>特徴：</strong>実験的・前衛的作品</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1763,14 +1510,36 @@
                         <div class="transport-warning">
                             <i class="fas fa-exclamation-triangle"></i>
                             <p><strong>最重要：チケット打刻（Validation）義務</strong></p>
-                            <p>改札なし！乗車時に必ず打刻機でタイムスタンプ。忘れると高額罰金（800 CZK以上）</p>
+                            <p>改札なし！乗車時に必ず打刻機でタイムスタンプ。忘れると高額罰金（1,500 CZK、15日以内支払いで1,000 CZK）</p>
                         </div>
                         
-                        <h5>チケット体系</h5>
+                        <h5>チケット体系（2025年料金）</h5>
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span>30分券</span>
+                                <span>24 CZK</span>
+                                <small>短距離移動向け</small>
+                            </div>
+                            <div class="price-row recommended">
+                                <span>90分券</span>
+                                <span>32 CZK</span>
+                                <small>観光地間移動に最適</small>
+                            </div>
+                            <div class="price-row">
+                                <span>24時間券</span>
+                                <span>110 CZK</span>
+                                <small>1日4回以上利用時にお得</small>
+                            </div>
+                            <div class="price-row">
+                                <span>72時間券</span>
+                                <span>310 CZK</span>
+                                <small>3日間滞在時の最適解</small>
+                            </div>
+                        </div>
                         <ul>
                             <li>地下鉄・トラム・バス・ケーブルカー共通</li>
-                            <li>時間制料金（30分券・90分券・24時間券等）</li>
-                            <li>1日4回以上利用なら24時間券がお得</li>
+                            <li>時間制料金（距離制ではない）</li>
+                            <li>券売機はクレジットカード対応（新型）</li>
                         </ul>
 
                         <h5>打刻方法</h5>
